@@ -42,7 +42,7 @@ const userHandler = {
         password
       } = req.body
       if (!account || !password || !name) {
-        res.status(500).send({
+        res.status(200).send({
           errMsg: '请完整填写注册信息'
         })
       } else {
